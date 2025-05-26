@@ -1,12 +1,6 @@
 // Importa las funciones necesarias de Firebase
 import { initializeApp } from 'firebase/app';
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  initializeAuth,
-  getReactNativePersistence
-} from 'firebase/auth';
+import {getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,initializeAuth,getReactNativePersistence} from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 

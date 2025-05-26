@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  View,
-  FlatList,
-  Text,
-  Image,
-  StyleSheet,
-  TouchableOpacity,
-} from 'react-native';
+import {View,FlatList,Text,Image,StyleSheet,TouchableOpacity,} from 'react-native';
 
 const artists = [
   {

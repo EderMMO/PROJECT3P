@@ -1,20 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import {
-  KeyboardAvoidingView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-  ImageBackground,
-  Image,
-} from "react-native";
+import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View, ImageBackground, Image,} from "react-native";
 import { auth } from "../../firebase";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword,} from "firebase/auth";
 import Feather from "react-native-vector-icons/Feather";
 
 const LoginScreen = () => {
@@ -25,7 +13,7 @@ const LoginScreen = () => {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
-        navigation.replace("Home"); // ¡Este nombre debe coincidir con el screen del stack!
+        navigation.replace("Home"); 
       }
     });
     return unsubscribe;
@@ -57,9 +45,9 @@ const LoginScreen = () => {
         style={styles.background}
       >
         <View style={styles.overlay}>
-          {/* Imagen de usuario */}
+          
           <Image
-            source={require("../images/iconlogin.jpg")} // Ruta local a tu imagen de usuario
+            source={require("../images/iconlogin.jpg")} 
             style={styles.userImage}
           />
 

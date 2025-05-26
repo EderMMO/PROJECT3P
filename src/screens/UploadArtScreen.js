@@ -1,28 +1,8 @@
 import React, { useState, useEffect } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  FlatList,
-  StyleSheet,
-  Image,
-  TouchableOpacity,
-  Alert,
-  ActivityIndicator,
-  SafeAreaView,
-} from "react-native";
+import {View,Text,TextInput,FlatList,StyleSheet,Image,TouchableOpacity,Alert,ActivityIndicator,SafeAreaView,} from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { db, auth } from "../../firebase";
-import {
-  collection,
-  addDoc,
-  query,
-  where,
-  getDocs,
-  deleteDoc,
-  updateDoc,
-  doc,
-} from "firebase/firestore";
+import {collection,addDoc,query,where,getDocs,deleteDoc,updateDoc,doc,} from "firebase/firestore";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 export default function UploadArtScreen() {

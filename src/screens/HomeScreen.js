@@ -1,15 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  View,
-  TextInput,
-  FlatList,
-  StyleSheet,
-  ActivityIndicator,
-  Text,
-  TouchableOpacity,
-  Image,
-  Alert,
-} from "react-native";
+import {View,TextInput,FlatList,StyleSheet,ActivityIndicator,Text,TouchableOpacity,Image,Alert,} from "react-native";
 import { db, auth } from "../../firebase";
 import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
 import Feather from "react-native-vector-icons/Feather";

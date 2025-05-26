@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
-
+//DetailScreen
 export default function DetailScreen({ route }) {
   const { artwork } = route.params;
 

@@ -1,22 +1,6 @@
 import React, { useState, useCallback } from "react";
-import {
-  View,
-  Text,
-  FlatList,
-  Image,
-  TouchableOpacity,
-  StyleSheet,
-  ImageBackground,
-} from "react-native";
-import {
-  collection,
-  query,
-  where,
-  getDocs,
-  deleteDoc,
-  doc,
-  addDoc,
-} from "firebase/firestore";
+import {View,Text,FlatList,Image,TouchableOpacity,StyleSheet,ImageBackground,} from "react-native";
+import {collection,query,where,getDocs,deleteDoc,doc,addDoc,} from "firebase/firestore";
 import { auth, db } from "../../firebase";
 import Feather from "react-native-vector-icons/Feather";
 import { useFocusEffect } from "@react-navigation/native";
@@ -70,7 +54,7 @@ export default function FavoritesScreen() {
 
   return (
     <ImageBackground
-      source={require("../images/Fondo_vangogh.jpg")} // <-- Cambia esta ruta a la de tu imagen de fondo
+      source={require("../images/Fondo_vangogh.jpg")} 
       style={styles.container}
       resizeMode="cover"
     >
